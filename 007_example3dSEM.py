@@ -8,16 +8,32 @@
 # Step2: Run this Python script via Python IDE or Ubuntu Terminal:  python  005_example3dSEM.py
 # Input:  seismic3dsem.par  and velocityoneshot3d.npy (size: nx,ny,nz  numpy format)
 
-
 import subprocess
 import numpy as np
 import matplotlib.pyplot as plt
 import pyvista as pv
-subprocess.run(["./seismic3dsem"])
+
 filein = np.genfromtxt('seismic3dsem.par', dtype=str, skip_header=24)
-model= filein[13]
+xmax= float(filein[0])
+ymax= float(filein[1])
+zmax= float(filein[2])
+dx= float(filein[3])
+dy= float(filein[4])
+dz= float(filein[5])
 path= filein[14]
 shotfile= filein[21]
+nx = int(xmax / dx)  # number of grid points in x-direction
+ny = int(ymax / dy)  # number of grid points in y-direction
+nz = int(zmax / dz)  # number of grid points in z-direction
+
+###3D VELOCITY FIELD : USER MAY CHANGE IT ################################
+model = np.ones((nx,ny,nz))*2000 # # LAYER  1
+model[0:nx, 0:ny, 50:100]  = np.ones((nx, ny, 50)) * 3000  # LAYER  2
+model[0:nx, 0:ny, 100:150] = np.ones((nx, ny, 50)) * 2500  # LAYER  3
+model[0:nx, 0:ny, 150:200] = np.ones((nx, ny, 50)) * 4500  # LAYER  4
+np.save('velocityoneshot3d', model)
+
+subprocess.run(["./seismic3dsem"])
 
 
 data = np.load('%s/%s.npy' % (path,shotfile))
