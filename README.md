@@ -1,4 +1,4 @@
-# gaiaup
+# shotwavemod
 Programs for Seismic Wave Simulation <br /> 
 Developed by GAIA (Center for Geosciences Artifical Intelligence and Advanced Computing) <br /> 
 Universitas Pertamina
