@@ -1,0 +1,10 @@
+################### PARAMETERIZATION  ##########################################
+Row 21: shotfilename (numpy format)
+Row 22: geometry file
+Row 23: segy out filename
+Row 24: sampling rate (msec)
+############################################################################
+shot2dmarmousi.npy
+geom.csv
+shot2dmarmousi.sgy
+4

@@ -1,0 +1,22 @@
+################### PARAMETERIZATION  ##########################################
+Row 13: first shot location (m)
+Row 14: shot interval (m)
+Row 15: receiver interval (m)
+Row 16: no of shots (check in output directory!)
+Row 17: first receiver location at first shot in left spread
+Row 18: last receiver location at first shot in left spread
+Row 19: first receiver location at first shot in right spread
+Row 20: last receiver location at first shot in right spread
+Row 21: cmp interval (m)
+Row 22: geometry file name
+############################################################################
+1050.0
+25
+25
+731
+0
+750
+750
+1525
+25
+geom.csv

@@ -1,0 +1,38 @@
+################### PARAMETERIZATION  ##########################################
+Row 21: x - model width (m)
+Row 22: z - model width (m)
+Row 23: dx-grid  interval (m)
+Row 24: dz-grid  interval (m)
+Row 25: x-source location (m)
+Row 26: z-source location (m)
+Row 27: recording time (s)
+Row 28: source time shift (s)
+Row 29: acquisition sampling rate (msec)
+Row 30: centre frequency of the source wavelet (Hz)
+Row 31: velocity filename (size: nx,nz  numpy format) nx,nz must be even!
+Row 32: your path to store results
+Row 33: receiver interval (m)
+Row 34: buffer zone to reduce edge effect (m)
+Row 35: save wavefield 1=YES 0=NO
+Row 36: activate surface multiple 1=YES 0=NO
+Row 37: buffer coefficient
+Row 38: output shot file name
+############################################################################
+2100.0
+1000.0
+5.0
+5.0
+1050.0
+0.0
+0.75
+0.1
+2
+200
+velocityoneshot2d.npy
+./TEMP2D
+25
+300
+1
+0
+0.0053
+shotSEM

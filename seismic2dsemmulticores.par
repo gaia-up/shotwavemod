@@ -1,0 +1,40 @@
+################### PARAMETERIZATION  ##########################################
+Row 22: x - model width (m)
+Row 23: z - model width (m)
+Row 24: dx-grid  interval (m)
+Row 25: dz-grid  interval (m)
+Row 26: x-source location (m)
+Row 27: z-source location (m)
+Row 28: recording time (s)
+Row 29: source time shift (s)
+Row 30: acquisition sampling rate (msec)
+Row 31: centre frequency of the source wavelet (Hz)
+Row 32: velocity filename (size: nx,nz  numpy format) nx,nz must be even!
+Row 33: your path to store results
+Row 34: receiver interval (m)
+Row 35: buffer zone to reduce edge effect (m)
+Row 36: save wavefield 1=YES 0=NO
+Row 37: activate surface multiple 1=YES 0=NO
+Row 38: buffer coefficient
+Row 39: output shot file name
+Row 40: no of cores
+############################################################################
+2100.0
+1250.0
+5.0
+5.0
+1050.0
+0.0
+1.5
+0.1
+4
+200
+marmousi_vel.npy
+./TEMP2D
+25
+300
+0
+1
+0.0053
+shotSEM
+3
