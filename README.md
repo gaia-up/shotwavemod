@@ -19,7 +19,7 @@ pip install pyvista==0.26.1
 pip install pandas==1.1.5
 ```
 
-# Function
+# Programs
 List of programs
 * seismic2dfdm: 2D Seismic Wave and Shot Simulation using Finite Difference Method
 * seismic2dsem: 2D Seismic Wave and Shot Simulation using Spectral Element Method
